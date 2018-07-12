@@ -125,6 +125,7 @@ unsigned int hook_func(unsigned int hooknum, struct sk_buff *skb, const struct n
 
     __be32 saddr, daddr;
     int iph_len;
+
     // 线性化SKB
     skb_linearize(skb);
 
